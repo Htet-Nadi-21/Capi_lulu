@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A Cute Sorry</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app-shell">
+    <section id="intro-screen" class="screen active" aria-live="polite">
+      <div class="cat-wrap">
+        <img class="cat cat-default photo-face" src="assets/intro-default.jpeg" alt="Cute sad character" />
+        <img class="cat cat-cry photo-face hidden" src="assets/intro-cry.jpeg" alt="Cute crying character" />
+      </div>
+
+      <div class="intro-copy intro-normal">
+        <h1>ကိုကို စိတ်ဆိုးနဲ့တော့နော်</h1>
+        <p class="lead">ဒါလေးတွေဖတ်ကြည့်ပါနော်</p>
+      </div>
+
+      <div class="intro-copy intro-beg hidden">
+        <h2>ဘာကိုမဖတ်ချင်တာလဲ</h2>
+        <p class="lead">မဖတ်ချင်လဲဖတ်ဟာ</p>
+      </div>
+
+      <div class="actions actions-start">
+        <button id="yes-btn" class="btn btn-primary">ဖတ်မယ်နော်</button>
+        <button id="no-btn" class="btn btn-outline">မဖတ်ဘူး</button>
+      </div>
+
+      <div class="actions actions-beg hidden">
+        <button id="back-btn" class="btn btn-primary">အွန်းအွန်း</button>
+      </div>
+    </section>
+
+    <section id="gallery-screen" class="screen" aria-labelledby="gallery-title">
+      <div class="tiles" id="tiles"></div>
+      <p id="gallery-title" class="hint">တစ်ခုချင်းထောက်ပြီးဖတ်ကြည့်နော်</p>
+    </section>
+
+    <section id="note-screen" class="screen note-screen" aria-live="polite">
+      <article class="note-card" id="note-card">
+        <p id="note-text"></p>
+      </article>
+      <button id="note-back" class="back-circle" aria-label="Go back">←</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
